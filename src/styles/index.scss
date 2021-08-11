@@ -1,0 +1,98 @@
+$bg-color: floralwhite;
+$die-color: rgb(36, 36, 36);
+
+body {
+  background: $bg-color;
+  display: flex;
+  justify-content: center;
+}
+
+.RollDie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    padding: 0.5em 1em;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    background: $die-color;
+    font-size: 1rem;
+    color: whitesmoke;
+    cursor: pointer;
+
+    transition: all 0.1s linear;
+
+    &:hover:enabled {
+      transform: scale(1.05);
+    }
+    &:disabled {
+      background-color: lighten($die-color, 50);
+    }
+    &:disabled:hover {
+      background-color: lighten($die-color, 50);
+    }
+  }
+}
+
+.Dies {
+  display: flex;
+  justify-content: space-evenly;
+  background: #0000;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  position: relative;
+
+  .die-one {
+    font-size: 5em;
+    margin: 0.1em 0.1em 0.1em 0.2em;
+    color: $die-color;
+  }
+
+  .die-two {
+    font-size: 5em;
+    margin: 0.1em 0.2em 0.1em 0.1em;
+    color: $die-color;
+  }
+}
+
+.Die-shake {
+  animation-name: shake;
+  animation-fill-mode: forwards;
+  animation-duration: 0.9s;
+}
+
+@keyframes shake {
+  10% {
+    transform: translateX(15px);
+  }
+  20% {
+    transform: translateX(-15px);
+  }
+  30% {
+    transform: translateX(10px);
+  }
+  40% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-12px);
+  }
+  70% {
+    transform: translateX(12px);
+  }
+  80% {
+    transform: translateX(-6px);
+  }
+  90% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

@@ -1,0 +1,172 @@
+body {
+  background: floralwhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.RollDie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.RollDie button {
+  padding: 0.5em 1em;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  background: #242424;
+  font-size: 1rem;
+  color: whitesmoke;
+  cursor: pointer;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.RollDie button:hover:enabled {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.RollDie button:disabled {
+  background-color: #a4a4a4;
+}
+
+.RollDie button:disabled:hover {
+  background-color: #a4a4a4;
+}
+
+.Dies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #0000;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.Dies .die-one {
+  font-size: 5em;
+  margin: 0.1em 0.1em 0.1em 0.2em;
+  color: #242424;
+}
+
+.Dies .die-two {
+  font-size: 5em;
+  margin: 0.1em 0.2em 0.1em 0.1em;
+  color: #242424;
+}
+
+.Die-shake {
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
+}
+
+@-webkit-keyframes shake {
+  10% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  20% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  30% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  40% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  60% {
+    -webkit-transform: translateX(-12px);
+            transform: translateX(-12px);
+  }
+  70% {
+    -webkit-transform: translateX(12px);
+            transform: translateX(12px);
+  }
+  80% {
+    -webkit-transform: translateX(-6px);
+            transform: translateX(-6px);
+  }
+  90% {
+    -webkit-transform: translateX(6px);
+            transform: translateX(6px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes shake {
+  10% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  20% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  30% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  40% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  60% {
+    -webkit-transform: translateX(-12px);
+            transform: translateX(-12px);
+  }
+  70% {
+    -webkit-transform: translateX(12px);
+            transform: translateX(12px);
+  }
+  80% {
+    -webkit-transform: translateX(-6px);
+            transform: translateX(-6px);
+  }
+  90% {
+    -webkit-transform: translateX(6px);
+            transform: translateX(6px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+/*# sourceMappingURL=index.css.map */
